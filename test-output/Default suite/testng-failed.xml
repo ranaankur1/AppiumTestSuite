@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="login_application_demo.login_scenarios">
+        <methods>
+          <include name="open_browser"/>
+          <include name="with_valid_credential"/>
+          <include name="close_browser"/>
+          <include name="with_invalid_credential"/>
+          <include name="without_credential"/>
+        </methods>
+      </class> <!-- login_application_demo.login_scenarios -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
