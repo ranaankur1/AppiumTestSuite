@@ -8,6 +8,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import scoope_locators.login_with_invalid_data_page;
+import utility_package.Data;
 import utility_package.UtilityBrowser;
 
 public class login_with_invalid_user_scenarios {
@@ -17,7 +18,8 @@ public class login_with_invalid_user_scenarios {
 	public void open_browser() throws MalformedURLException
 	{
 		UtilityBrowser.openbrowser();
-		UtilityBrowser.openurl("https://m.facebook.com");
+		UtilityBrowser.openurl(Data.db_connection);
+
 	}
 	
 	@Test(priority=1,description="login with invalid credential")
